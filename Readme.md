@@ -40,7 +40,6 @@ Now that we have a working Kubernetes cluster with Helm installed and ready to g
 ```
 helm install -f values.yaml ./helm
 ```
-
 When you run this command, you should see output similar to below:
 
 ```
