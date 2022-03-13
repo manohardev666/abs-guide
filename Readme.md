@@ -65,7 +65,8 @@ NOTES:
 Check the status of your Deployment by running this comamnd:
 
 ```sh
-kubectl get deployments```
+kubectl get deployments
+```
 
 List the related Pods with the following command:
 
