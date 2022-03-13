@@ -1,0 +1,4 @@
+apiVersion: v1
+description: A Helm chart to package abs-guide container for Kubernetes.
+name: abs-guide
+version: "1.0"
