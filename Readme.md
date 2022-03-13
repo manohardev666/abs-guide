@@ -1,6 +1,6 @@
 # abs-guide application deployment on Kubernetes.
 
-This guide uses the `abs-guide` Helm Chart to deploy abs-guide application on Nginx webserver.
+This guide uses the `abs-guide` Helm Chart to deploy abs-guide application on Kubernetes after building nginx docker image.
 
 ## Overview
 
