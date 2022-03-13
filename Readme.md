@@ -28,21 +28,18 @@ Step 3/3 : COPY abs-guide/* /usr/share/nginx/html
  ---> 3407953dafd0
 Removing intermediate container cb64bb3e3aca
 Successfully built 3407953dafd0
-
-
-Here are the steps, linked to the relevant sections of this doc:
-
+```
 
 ## Deploy abs-guide
 
 Now that we have a working Kubernetes cluster with Helm installed and ready to go, the next step is to deploy application using the `abs-guide` chart.
 
-```
+```sh
 helm install -f values.yaml ./helm
 ```
 When you run this command, you should see output similar to below:
 
-```
+```sh
 NAME:   abs-guide
 LAST DEPLOYED: Sun March 13 09:14:39 2022
 NAMESPACE: default
@@ -83,13 +80,13 @@ kubectl get services
 In the previous step, we deployed nginx webserver with abs-guide application using the `abs-guide` Helm Chart. Now we want to verify it has deployed
 successfully.
 
-```
+sh'''
 $ kubectl get deployments
 NAME                  DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 abs-guide   3         3         3            3           5m
-```
+'''
 
-```
+sh```
 $ kubectl get pods
 NAME                                 READY     STATUS    RESTARTS   AGE
 abs-guide-7b7bb49d-b8tf8   1/1       Running   0          13m
