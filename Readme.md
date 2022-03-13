@@ -64,15 +64,20 @@ abs-guide-7b7bb49d-zxpcm  0/1    ContainerCreating  0         0s
 NOTES:
 Check the status of your Deployment by running this comamnd:
 
-kubectl get deployments
+```sh
+kubectl get deployments```
 
 List the related Pods with the following command:
 
+```sh
 kubectl get pods
+```
 
 Use the following command to view information about the Service:
 
+```sh
 kubectl get services
+```
 
 
 ## Check the Status of the Deployment and pod
@@ -80,13 +85,13 @@ kubectl get services
 In the previous step, we deployed nginx webserver with abs-guide application using the `abs-guide` Helm Chart. Now we want to verify it has deployed
 successfully.
 
-sh'''
+```sh
 $ kubectl get deployments
 NAME                  DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 abs-guide   3         3         3            3           5m
 '''
 
-sh```
+```sh
 $ kubectl get pods
 NAME                                 READY     STATUS    RESTARTS   AGE
 abs-guide-7b7bb49d-b8tf8   1/1       Running   0          13m
