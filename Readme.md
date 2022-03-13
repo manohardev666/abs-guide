@@ -63,7 +63,7 @@ NAME                                READY  STATUS             RESTARTS  AGE
 abs-guide-7b7bb49d-b8tf8  0/1    ContainerCreating  0         0s
 abs-guide-7b7bb49d-fgjd4  0/1    ContainerCreating  0         0s
 abs-guide-7b7bb49d-zxpcm  0/1    ContainerCreating  0         0s
-
+```
 
 NOTES:
 Check the status of your Deployment by running this comamnd:
